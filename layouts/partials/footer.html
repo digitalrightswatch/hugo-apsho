@@ -55,7 +55,14 @@
           </p>
           <ul class="footer-description-social">
             <li>
+              <a href="{{ .Site.Params.social.instagram }}"><i class="ti-instagram"></i></a>
+            </li>
+            <li>
               <a href="{{ .Site.Params.social.facebook }}"><i class="ti-facebook"></i></a>
+            </li>
+            <li>
+              <!-- FIXME: Use correct mastodon icon -->
+              <a href="{{ .Site.Params.social.mastodon }}">🐘</a>
             </li>
             <li>
               <a href="{{ .Site.Params.social.twitter }}"><i class="ti-twitter-alt"></i></a>
@@ -85,7 +92,7 @@
           {{ $address := .Site.Params.address }}
           <div class="footer-widget-list">
             <ul>
-              <li><a href="tel:{{ $address.phone }}"><i class="ti-mobile"></i>{{ $address.phone }}</a></li> 
+              <li><a href="tel:{{ $address.phone }}"><i class="ti-mobile"></i>{{ $address.phone }}</a></li>
               <li><a href="mailto:{{ $address.email }}"><i class="ti-email"></i>{{ $address.email }}</a></li>
               <li><p><i class="ti-pin"></i>{{ $address.address }}</p></li>
             </ul>
