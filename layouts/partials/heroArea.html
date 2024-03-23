@@ -43,8 +43,8 @@
             <div class="hero-content">
               <span class="hero-content-subtitle"> {{ .caption }} </span>
               <h1> {{ .title }} </h1>
-              <p> {{ .description }} </p>
-              <ul class="hero-content-buttons">
+              <p> {{ .description  | markdownify }} </p>
+              <!-- <ul class="hero-content-buttons">
                 <li>
                   <a href="#" class="btn-platform">
                     <i>
@@ -97,7 +97,7 @@
                     </div>
                   </a>
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2">
